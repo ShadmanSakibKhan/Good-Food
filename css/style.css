@@ -1,0 +1,1129 @@
+/* 
+    Author: Vijay Thapa;
+    Theme: Restaurant Food Order;
+    version: 1.0;
+*/
+
+
+/* CSS for All */
+
+* {
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.img-curve {
+    border-radius: 15px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-white {
+    color: white;
+}
+
+.error {
+    padding: 2%;
+    color: red;
+}
+
+.success {
+    padding: 2%;
+    color: green;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: #ff4757;
+}
+
+h2 {
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.float-container {
+    position: relative;
+}
+
+.float-text {
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+
+fieldset {
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+
+/* preloader */
+
+.pre_loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 999999;
+}
+
+.pre_loader img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* CSSS for navbar section */
+
+.logo {
+    width: 10%;
+    float: left;
+}
+
+.main_menu {
+    line-height: 60px;
+}
+
+.main_menu {
+    height: 50px;
+    background-color: rgba(54, 54, 54, 0.25);
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    z-index: 999;
+}
+
+.menu_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-top: 0;
+}
+
+.main_menu ul {
+    list-style-type: none;
+}
+
+.main_menu ul li {
+    display: inline;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.main_menu ul li a.active {
+    background-color: #e23e38;
+    color: #000;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link {
+    padding: 0;
+    color: #f1f1f1;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    line-height: 50px;
+    padding: 0 10px;
+    transition: all linear .3s;
+    position: relative;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link:hover {
+    background-color: #ecc604;
+    color: #222;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #e23e38;
+    transition: all linear .3s;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link:hover::after {
+    width: 100%;
+}
+
+.main_menu .navbar-brand {
+    width: 245px;
+    height: 70px;
+    background: #ff11f12d;
+    transform: skew(-40deg);
+    text-align: center;
+}
+
+.main_menu .navbar-brand img {
+    transform: skew(40deg);
+    padding: 10px 0;
+}
+
+
+/*   banner part start  */
+
+iframe {
+    margin-top: -253px;
+}
+
+.banner_item {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 254px 0 117px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner_item::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70%;
+    /* background: rgba(3, 3, 3, 0.6); */
+    z-index: -1;
+}
+
+.banner_text h2 {
+    color: #f1f1f1;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-top: -427px;
+    position: relative;
+}
+
+.banner_text h2::after {
+    position: absolute;
+    content: '';
+    left: 7px;
+    top: 21px;
+    width: 124px;
+    height: 3px;
+    background: #e23e38;
+    clip-path: polygon(0 0, 100% 0%, 94% 100%, 0% 100%);
+    margin-top: 13x;
+}
+
+.banner_text h2::before {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 21px;
+    width: 96px;
+    height: 3px;
+    background: #e23e38;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
+}
+
+.banner_text h1 {
+    color: #ecc604;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-top: 18px;
+    position: relative;
+}
+
+.banner_text h1::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 3 px;
+    height: 196 px;
+    background: #e23e38;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
+    margin-top: 10px;
+}
+
+.banner_text h1::before {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0 px;
+    width: 3 px;
+    height: 196 px;
+    background: #e23e38;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
+    margin-top: 10px;
+}
+
+.banner_text p {
+    color: #dddddd;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 18px;
+    padding-top: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.banner_text p::after {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 99px;
+    width: 106px;
+    height: 3px;
+    background: #e23e38;
+}
+
+.banner_text p::before {
+    position: absolute;
+    content: '';
+    right: 0px;
+    top: 95px;
+    width: 106px;
+    height: 3px;
+    background: #e23e38;
+}
+
+.banner_text a {
+    color: #f1f1f1;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    border: 1px solid #f1f1f1;
+    line-height: 34px;
+    padding: 0 14px;
+    margin-top: 30px;
+}
+
+.banner_text a:hover {
+    color: #f1f1f1;
+    background-color: #e23e38;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    border: 1px solid #e23e38;
+    line-height: 34px;
+    padding: 0 14px;
+    margin-top: 30px;
+}
+
+
+/*  banner part end */
+
+
+/*  search_main part main */
+
+.search_option {
+    border: none;
+    width: 207px;
+}
+
+.search_option:hover {
+    border: 1px solid #333;
+    border-radius: 3px;
+    width: 250px;
+    height: 40px;
+    transition: all .3s;
+}
+
+
+/*  search_main part end */
+
+
+/* CSS for Food SEarch Section */
+
+.food-search {
+    /* background-image: url(../images/bg.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* padding: 7% 0; */
+}
+
+
+/* About part start  */
+
+#about_part {
+    padding: 0px 0;
+}
+
+.about_text {
+    text-align: center;
+}
+
+.about_text h2 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.about_text p {
+    padding-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about_text span {
+    margin-top: 25px;
+}
+
+.about_video {
+    position: relative;
+}
+
+.about_video .overlay {
+    position: absolute;
+    left: 0;
+    top: -53px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*  About part end */
+
+
+/* CSS for Categories */
+
+.categories {
+    padding: 2% 0;
+}
+
+.box-3 {
+    width: 100%;
+    float: left;
+    margin: 2%;
+    /* transform: scale(0); */
+    transition: all linear .3s;
+}
+
+.categories a {
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+
+.categories .spoon {
+    text-align: center;
+    margin: -3px -552px;
+}
+
+
+/* .box-3:hover {
+    padding-bottom: 5px;
+    /* transform: scale(1); */
+
+
+/* CSS for Food Menu */
+
+.food-menu {
+    /* background-image: url(images/bn1.jpg); */
+    background-color: #f5ce0a;
+    padding: 4% 0;
+}
+
+.food-menu-box {
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu-img {
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc {
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price {
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+
+.food-detail {
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+
+/* CSS for Social */
+
+.social ul {
+    list-style-type: none;
+}
+
+.social ul li {
+    display: inline;
+    padding: 1%;
+}
+
+
+/* for Order Section */
+
+.order {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.input-responsive {
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.order-label {
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+
+#counter {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    padding: 45px 0;
+    position: relative;
+    z-index: 1;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+#counter::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.824);
+    z-index: -1;
+}
+
+
+/* Counter part end */
+
+
+/* Team part start  */
+
+.team_head {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.team_img {
+    position: relative;
+}
+
+.team_img .overly {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(204, 22, 22, 0.5);
+    border: 5px solid #fff;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+
+.team_img:hover .overly {
+    transform: scale(1);
+}
+
+.team_img .overly ul li a {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.team_img .overly ul {
+    position: absolute;
+    right: 10px;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.team_img .overly ul li a:hover {
+    background: #fff;
+    color: #1da0f2;
+}
+
+.team_text p {
+    transform: scale(0);
+    padding: 10px;
+}
+
+.team_text h4 {
+    padding: 5px;
+    text-align: center;
+}
+
+.team_text h5 {
+    padding: 5px;
+    text-align: center;
+}
+
+.team_inner {
+    margin-top: 75px;
+    transition: all linear .3s;
+    margin-right: -15px;
+}
+
+.team_inner:hover {
+    transform: translateY(-42px);
+}
+
+.team_inner:hover .team_text {
+    border: 1px solid rgba(204, 22, 22, 0.5);
+    border-top: 0;
+}
+
+.team_inner:hover .team_text p {
+    transform: scale(1);
+}
+
+
+/*  Team part end */
+
+
+/* Review part start  */
+
+.gallry_head {
+    text-align: center;
+}
+
+.text_banner {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    padding: 30px 70px;
+    position: relative;
+    z-index: 1;
+}
+
+.text_banner::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+.text_inner {
+    color: #fff;
+    padding-left: 92px;
+    position: relative;
+}
+
+.text_inner img {
+    position: absolute;
+    left: 0;
+}
+
+.text_text p {
+    color: #fff;
+    padding: 20px 0;
+}
+
+.slider .slick-dots li button {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slider .slick-dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+}
+
+.slider .slick-dots li.slick-active button {
+    background: #e23e38;
+    border-color: #e23e38;
+    width: 20px;
+    height: 20px;
+}
+
+.offer_inner {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.offer_inner h2 {
+    padding: 35px 0;
+    color: #f8ac09;
+}
+
+.offer_inner h3 {
+    padding: 20px 0px;
+    background: rgb(245, 158, 8);
+    font-weight: 700;
+}
+
+.offer_inner ul {
+    background: #f1f1f1;
+}
+
+.offer_inner span {
+    font-size: 20px;
+    color: #f1f1f1;
+}
+
+.offer_inner a {
+    padding: 5px 0;
+    background: #ddd;
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.offer_inner:hover h3 {
+    background: #e23e38ed;
+}
+
+.offer_inner:hover a {
+    color: #f1f1f1;
+    background: #e23e38ed;
+}
+
+
+/* Review part end */
+
+
+/* Sponser part start  */
+
+#sponser_part {
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.sponser_img {
+    background: #f1f1f1;
+    padding: 0px 15px;
+}
+
+.nxt_arr {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prv_arr {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*  Sponser part end */
+
+
+/* footer part start  */
+
+#footer_part {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    position: relative;
+    z-index: 1;
+    color: #f1f1f1;
+}
+
+#footer_part::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: -1;
+}
+
+.footer_logo {
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.copy_right {
+    padding: 20px 0;
+    border-top: 1px solid #f1f1f1;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.copy_right span {
+    color: rgb(226, 9, 45);
+}
+
+.footer_img1 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.footer_icon ul {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 67%;
+    float: left;
+}
+
+.footer_icon ul li {
+    margin-top: 70px;
+    float: left;
+}
+
+.footer_icon ul li a {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.footer_icon ul li a:hover {
+    background: #fff;
+    color: #1da0f2;
+}
+
+.footer_days h4 {
+    padding-top: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer_days ul {
+    font-size: 13px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer_times {
+    top: 65px;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer_social h4 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer_social p {
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer_social p i {
+    color: rgb(22, 116, 188);
+    padding-right: 10px;
+}
+
+.footer_fluckr h4 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer_contact h4 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer_contact p {
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 10px;
+}
+
+.footer_contact p i {
+    color: #e23e38;
+}
+
+
+/*  footer part end */
+
+
+/* Contact page  Start  */
+
+#contact_head {
+    padding: 80px 0;
+}
+
+.con_img {
+    position: relative;
+}
+
+.con_img a {
+    position: absolute;
+    left: -92px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    color: #f8b007;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+
+.contact_info {
+    margin-top: 50px;
+}
+
+.conta_left_pad {
+    padding-left: 15px;
+}
+
+.contact_info h4 {
+    color: #f8b007;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 10px;
+}
+
+.contact_info p {
+    color: #444444;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    line-height: 26px;
+    padding-bottom: 52px;
+}
+
+.cont_form h4 {
+    color: #f8b007;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 20px;
+}
+
+.cont_form input {
+    width: 392px;
+    height: 45px;
+    margin-right: 25px;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cont_form input::placeholder {
+    color: #444;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+}
+
+.cont_form input:last-child {
+    margin-right: 0;
+}
+
+.cont_form textarea {
+    width: 100%;
+    height: 45px;
+    margin-top: 90px;
+    resize: none;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cont_form textarea::placeholder {
+    color: #444;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+}
+
+.cont_form button {
+    width: 100%;
+    cursor: pointer;
+    padding: 11px 0;
+    margin-top: 25px;
+    border: 0;
+    color: #444;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    transition: all linear .4s;
+    margin-bottom: 50px;
+}
+
+.cont_form button:hover {
+    color: #fff;
+    background: #f8af04;
+}
+
+.cont_form button:focus {
+    outline: 0;
+}
+
+
+/*  Contact page  End  */
+
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px) {
+    .logo {
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+    .menu ul {
+        text-align: center;
+    }
+    .food-search input[type="search"] {
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+    .btn {
+        width: 91%;
+        padding: 2%;
+    }
+    .food-search {
+        padding: 10% 0;
+    }
+    .categories {
+        padding: 20% 0;
+    }
+    h2 {
+        margin-bottom: 10%;
+    }
+    .box-3 {
+        width: 100%;
+        margin: 4% auto;
+    }
+    .food-menu {
+        padding: 20% 0;
+    }
+    .food-menu-box {
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social {
+        padding: 5% 0;
+    }
+    .order {
+        width: 100%;
+    }
+}

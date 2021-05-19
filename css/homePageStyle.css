@@ -1,0 +1,93 @@
+h1{
+    color: green;
+    text-align: center;
+}
+
+body, html{
+    overflow: scroll;
+    line-height: 1;
+    margin: 0;
+}
+
+h3{
+    color: black;
+    text-align: center;
+}
+
+img{
+    width: 140px;
+    padding-bottom: .5px;
+    border-bottom: 5px solid #a8f057;
+}
+
+div {
+    justify-content: center;
+    padding: 1.4%;
+  }
+
+div.font_color{
+    color: rgb(109, 110, 108);
+}  
+
+div.faculty{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+   
+}
+
+
+div.caption{
+    font-size: 12pt;
+    align-items: left;
+}
+
+button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 35px 5px 35px;
+    font-size: 10pt;
+}
+
+button:hover {
+    background-color: #406141;
+  }
+
+.col-1{
+    width: 10.655%;
+}
+
+
+.row{
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 1%;
+    
+}
+
+
+
+@media screen and (max-width: 700px){
+    
+
+    .col-1{
+        width: 25%;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    
+
+    .col-1{
+        width: 100%;
+        margin: 0;
+        padding-left: 30%;
+    }
+} 

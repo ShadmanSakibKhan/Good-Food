@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    /* border: 1px solid black; */
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clrfix {
+    float: none;
+    clear: both;
+}
+
+.tbl-full {
+    width: 100%;
+}
+
+.tbl-30 {
+    width: 30%;
+}
+
+table tr th {
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+
+table tr td {
+    padding: 1%;
+}
+
+.btn-primary {
+    background: rgb(7, 82, 196);
+    padding: 1%;
+    color: blanchedalmond;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: rgb(41, 172, 243);
+}
+
+.btn-2nd {
+    background: rgb(7, 196, 114);
+    padding: 1%;
+    color: blanchedalmond;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-2nd:hover {
+    background: rgb(8, 126, 55);
+}
+
+.btn-3rd {
+    background: rgb(230, 100, 98);
+    padding: 1%;
+    color: blanchedalmond;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-3rd:hover {
+    background: rgb(236, 20, 20);
+}
+
+.success {
+    color: rgb(24, 167, 97);
+}
+
+.error {
+    color: brown;
+}
+
+
+/* menu */
+
+.menu {
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 1%;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* logo */
+
+
+/* content */
+
+.menu_content {
+    margin: 1% 0;
+    background: rgb(226, 221, 221);
+    padding: 10px 0;
+}
+
+.col-4 {
+    width: 18%;
+    background-color: honeydew;
+    padding: 2%;
+    margin: 1%;
+    float: left;
+}
+
+
+/* footer */
+
+.footer {
+    background: rgb(33, 33, 32);
+    color: blanchedalmond;
+    text-align: center;
+    width: 100%;
+}
+
+.copy_right span {
+    color: rgb(235, 169, 3);
+}
+
+
+/* login */
+
+.login {
+    border: 1px solid grey;
+    width: 30%;
+    margin: 5% auto;
+    padding: 2%;
+}
